@@ -1,13 +1,13 @@
-package aula02;
+package aula03;
 
 public class Caneta {
 	
-	String modelo;
-	String cor;
-	float ponta;
-	int carga;
-	boolean tampada;
-	void status () {
+	public String modelo;
+	public String cor;
+	private float ponta;
+	protected int carga;
+	private boolean tampada;
+	public void status () {
 		System.out.println("Modelo: " + this.modelo);
 		System.out.println("Uma caneta " + this.cor);
 		System.out.println("Ponta: " + this.ponta);
@@ -15,7 +15,7 @@ public class Caneta {
 		System.out.println(" esta tampada? " + this.tampada);
 	}
 	
-	void rabiscar () {
+	public void rabiscar () {
 		if (this.tampada == true) {
 			System.out.println("ERRO! Nao posso rabiscar");
 		
@@ -25,13 +25,15 @@ public class Caneta {
 
 	}
 	
-	void tampar () {
+	public void tampar () {
 		this.tampada = true; // this é uma referencia ao propio objeto	q é chamado,quando se quer mudar um atributo dentro da propria classe coloque a palavra this na frente da linha que vai mexer nesse atributo.
 		
 	}
 
-	void destampar () {
+	 public void destampar () {
 		this.tampada = false;
 		
 	}
-}
+}	
+
+
