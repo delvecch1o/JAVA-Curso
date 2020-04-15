@@ -1,13 +1,13 @@
-package aula02;
+package aula03;
 
-public class AulaCurso02 {
+public class AulaCurso03 {
 
 	public static void main(String[] args) {
 		
 		Caneta c1 = new Caneta ();
 		System.out.println("---------CANETA c1------------");
 		
-		c1.cor = "Azul"; // atributos n„o tem os parenteses 
+		c1.cor = "Azul"; // atributos n√£o tem os parenteses 
 		c1.ponta = 0.5f;
 		
 		c1.tampar();
