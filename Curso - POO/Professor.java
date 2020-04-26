@@ -1,11 +1,12 @@
-package projetopessoas;
+package aula011;
 
 public class Professor extends Pessoa {
+	
 	private String especialidade;
 	private float salario;
 	
-	public void receberAumento(float aumento) {
-		this.salario = this.salario + aumento;
+	public void receberAumento() {
+		this.salario = this.salario++;
 	}
 
 	public String getEspecialidade() {
@@ -23,7 +24,6 @@ public class Professor extends Pessoa {
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
-		
 	
 	
 }
