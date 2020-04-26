@@ -1,13 +1,22 @@
-package aula011;
+package projetoyoutube;
 
-public abstract class Pessoa {
-	private String nome;
-	private int idade;
-	private String sexo;
+public abstract class Pessoa { // é uma classe abstract ou seja nao pode virar um objeto.
+
+	protected String nome;
+	protected int idade;
+	protected String sexo;
+	protected float experiencia;
 	
-	public void fazerAniversario() {
-		this.idade++;
+	
+	
+	public Pessoa(String nome, int idade, String sexo) {
+		super();
+		this.nome = nome;
+		this.idade = idade;
+		this.sexo = sexo;
+		this.experiencia = 0;
 	}
+	
 	
 	public String getNome() {
 		return nome;
@@ -27,16 +36,18 @@ public abstract class Pessoa {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
+	public float getExperiencia() {
+		return experiencia;
+	}
+	public void setExperiencia(float experiencia) {
+		this.experiencia = experiencia;
+	}
 
 
 	@Override
-	
 	public String toString() {
-		System.out.println("--------------------------");
-		return "Pessoa {nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
-		
+		return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "\n, experiencia=" + experiencia + "]";
 	}
-	
 	
 	
 }
